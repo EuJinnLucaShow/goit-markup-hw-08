@@ -1,0 +1,50 @@
+
+    $primary-text-color: #212121;
+    $second-text-color: #757575;
+    $primary-white-color: #fff;
+    $second-blue-color: #2196f3;
+
+    $primary-font: 'Roboto';
+    $accent-font: 'Raleway';
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+body {
+    font-size: 14px;
+    font-family: $primary-font, sans-serif;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    background-color: $primary-white-color;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+address {
+    font-style: normal;
+}
+
+section {
+    padding-bottom: 94px;
+}
+
+footer {
+    background: #2f303a;
+    color: $primary-white-color;
+}

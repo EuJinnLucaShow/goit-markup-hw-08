@@ -1,0 +1,129 @@
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page-header--line {
+    border-bottom: 1px solid #ececec;
+}
+
+.page-header__list {
+    display: flex;
+}
+
+.page-header__list>li:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* Logo */
+
+.logo {
+    font-family: $accent-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $second-blue-color;
+}
+
+.page-header__logo {
+    padding-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.page-header__span {
+    color: $primary-text-color;
+}
+
+.page-footer__span {
+    color: $primary-white-color;
+}
+
+/* Header nav */
+
+.page-header__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+
+    &:hover,
+        &:focus {
+            color: $second-blue-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+.page-header__link:hover::after,
+.page-header__link:focus::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.page-header__link::after {
+    display: block;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: $second-blue-color;
+    border-radius: 2px;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-header__current {
+    color: $second-blue-color;
+}
+
+.page-header__current.page-header__link::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.page-header__contacts {
+    margin-left: auto;
+}
+
+.page-header__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $second-text-color;
+    border: none;
+
+    &:hover,
+        &:focus {
+            color: $second-blue-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+.page-header__contact:hover .page-header__icon,
+.page-header__contact:focus .page-header__icon {
+    fill: $second-blue-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-header__icon {
+    margin-right: 10px;
+    padding: 0;
+    fill: $second-text-color;
+}
