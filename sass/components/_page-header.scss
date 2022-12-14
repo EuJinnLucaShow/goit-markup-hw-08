@@ -112,14 +112,13 @@ header .container {
             color: $second-blue-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-}
 
-.page-header__contact:hover .page-header__icon,
-.page-header__contact:focus .page-header__icon {
-    fill: $second-blue-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            & .page-header__icon {
+                    fill: $second-blue-color;
+                    transition-duration: 250ms;
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                }
+        }
 }
 
 .page-header__icon {
