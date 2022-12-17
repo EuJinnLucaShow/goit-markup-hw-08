@@ -1,19 +1,9 @@
-header .container {
+.page-header__nav {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.page-header--line {
-    border-bottom: 1px solid #ececec;
-}
-
-.page-header__list {
-    display: flex;
-}
-
-.page-header__list>li:not(:last-child) {
-    margin-right: 50px;
+    min-height: 80px;
 }
 
 /* Logo */
@@ -40,11 +30,78 @@ header .container {
     color: $primary-white-color;
 }
 
-/* Header nav */
+/* menu-button */
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button .icon-menu {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+/* menu-container */
+
+.menu-container {    
+    background-color: $primary-white-color;
+    text-align: center;
+    font-size: 20px;
+
+
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        &.is-open {
+            display: block;            
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+}
+
+/* page-header__list */
+
+.page-header__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+
+        &>li:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+}
 
 .page-header__link {
     position: relative;
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -54,11 +111,11 @@ header .container {
     color: $primary-text-color;
 
     &:hover,
-        &:focus {
-            color: $second-blue-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    &:focus {
+        color: $second-blue-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .page-header__link:hover::after,
@@ -84,19 +141,17 @@ header .container {
 
 .page-header__current {
     color: $second-blue-color;
-}
 
-.page-header__current.page-header__link::after {
-    opacity: 1;
-    transform: scaleX(1);
-}
-
-.page-header__contacts {
-    margin-left: auto;
+    &.page-header__link::after {
+            opacity: 1;
+            transform: scaleX(1);
+        }
 }
 
 .page-header__contact {
     display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
     align-items: center;
     justify-content: center;
     font-family: $primary-font;
@@ -108,21 +163,25 @@ header .container {
     border: none;
 
     &:hover,
-        &:focus {
-            color: $second-blue-color;
+    &:focus {
+        color: $second-blue-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        & .page-header__icon {
+            fill: $second-blue-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-            & .page-header__icon {
-                    fill: $second-blue-color;
-                    transition-duration: 250ms;
-                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                }
         }
+    }
 }
 
 .page-header__icon {
     margin-right: 10px;
     padding: 0;
     fill: $second-text-color;
+}
+
+.portfolio-header--line {
+    border-bottom: 1px solid #ececec;
 }
