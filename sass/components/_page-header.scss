@@ -1,6 +1,6 @@
-.page-header__nav {
+.page-header {
     position: relative;
-    display: flex;
+    display: block;    
     align-items: center;
     justify-content: space-around;
     min-height: 80px;
@@ -17,9 +17,9 @@
 }
 
 .page-header__logo {
-    padding-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .page-header__span {
@@ -32,8 +32,7 @@
 
 /* menu-button */
 
-.menu-button {
-    display: inline-flex;
+.menu-button {    
     margin: 0;
     padding: 0;
     border: none;
@@ -130,7 +129,7 @@
     content: '';
     left: 0;
     bottom: 0;
-    width: 100%;
+    // width: 100%;
     height: 4px;
     background: $second-blue-color;
     border-radius: 2px;
@@ -148,8 +147,7 @@
         }
 }
 
-.page-header__contact {
-    display: flex;
+.page-header__contact {   
     padding-top: 32px;
     padding-bottom: 32px;
     align-items: center;
