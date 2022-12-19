@@ -185,7 +185,14 @@ header .container {
   fill: #757575;
 }
 
-.page-header__nav {
+.page-header .container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.page-header__list {
   display: flex;
   padding: 0;
   margin: 0;
