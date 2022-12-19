@@ -17,6 +17,11 @@
 <body>
   <header class="page-header">
     <div class="container">
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40">
+          <use href="./images/mob-menu.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
       <a href="./index.html" class="logo page-header__logo">Web<span class="page-header__span">Studio</span></a>
       <nav class="page-header__nav">
         <ul class="page-header__list">
@@ -410,9 +415,39 @@
     </div>
   </div>
 
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="40" height="40">
+        <use href="./images/mob-menu.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li><a href="#" class="linkk">Студія</a></li>
+      <li><a href="#" class="linkk">Портфоліо</a></li>
+      <li><a href="#" class="linkk">Контакти</a></li>
+    </ul>
+    <ul class="contact">
+      <li><a href="tel:+380961111111" class="contact-link contact-tel">+380961111111</a></li>
+      <li><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
+    </ul>
+    <ul class="social">
+      <li class="soc-list"><a href="#" class="soc-link">Instagram</a><span class="span-soc-link"></span></li>
+      <li class="soc-list"><a href="#" class="soc-link">Twitter</a><span class="span-soc-link"></span></li>
+      <li class="soc-list"><a href="#" class="soc-link">Facebook</a><span class="span-soc-link"></span></li>
+      <li class="soc-list"><a href="#" class="soc-link">LinkedIn</a></span></li>
+    </ul>
+  </div>
+
   <!-- Connect JavaScript to html -->
 
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
+
   <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
