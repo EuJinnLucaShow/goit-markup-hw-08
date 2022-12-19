@@ -197,16 +197,6 @@ header .container {
     display: none;
   }
 }
-.page-header__nav .link {
-  padding: 10px;
-  color: inherit;
-}
-
-.page-header__nav .link:hover,
-.page-header__nav .link:focus {
-  text-decoration: underline;
-}
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
