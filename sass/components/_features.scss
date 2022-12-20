@@ -2,19 +2,16 @@
     padding-top: 94px;
 }
 
-@media screen and (min-width: 768px){   
+// .features__list {
+//     display: flex;
 
-.features__list {
-    display: flex;
-}
-
-    &>li:not(:last-child) {
-            margin-right: 30px;
-        }
-}
+//     &>li:not(:last-child) {
+//             margin-right: 30px;
+//         }
+// }
 
 .features__item {
-    width: 270px;
+    width: 450px;
     
 }
 
@@ -23,8 +20,7 @@
     justify-content: center;
     align-items: center;
     height: 120px;
-    // width: 270px;
-    width: 100%;
+    width: 450px;    
     background-color: #f5f4fa;
     margin-bottom: 30px;
     border-radius: 4px;

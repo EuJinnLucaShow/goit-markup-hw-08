@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p,
 h1,
 h2,
@@ -354,35 +355,12 @@ header .container {
   margin: -1px;
 }
 
-@media screen and (max-width: 480px) {
-  .features__item {
-    width: 450px;
-  }
-  .features__bg {
-    width: 450px;
-  }
+.features {
+  padding-top: 94px;
 }
-@media screen and (min-width: 1024px) {
-  .features__list {
-    display: flex;
-  }
-  .features__list > li:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .features__item {
-    width: 270px;
-  }
-  .features__bg {
-    width: 270px;
-  }
-}
+
 .features__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  width: 450px;
 }
 
 .features__bg {
@@ -390,6 +368,7 @@ header .container {
   justify-content: center;
   align-items: center;
   height: 120px;
+  width: 450px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -568,6 +547,76 @@ header .container {
 
 .team__soc-icon {
   fill: #afb1b8;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
+}
+
+.grid__item {
+  width: calc((100% - 60px) / 3);
+}
+
+.grid__item {
+  display: block;
+}
+.grid__item:hover, .grid__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid__subtitle {
+  max-width: 370px;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.grid__text {
+  max-width: 370px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.grid__style {
+  padding: 20px 24px 20px 24px;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-top-style: none;
+}
+
+/* Синій оверлей з текстом на картках сторінки Портфоліо */
+.grid__box {
+  position: relative;
+  overflow: hidden;
+}
+.grid__box:hover .grid__overlay, .grid__box:focus .grid__overlay {
+  transform: translateY(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform 250ms;
+}
+
+.grid__box-link:focus .grid__overlay {
+  transform: translateY(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
