@@ -63,7 +63,6 @@ footer {
 }
 
 header .container {
-  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,9 +90,18 @@ header .container {
 }
 
 .page-header__logo {
-  padding-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .page-header__logo {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    margin-right: 93px;
+  }
 }
 
 .page-header__span {
@@ -320,7 +328,7 @@ header .container {
 }
 
 /* .span-soc-link {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-  margin-right: 7px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-right: 7px;
 } *//*# sourceMappingURL=main.css.map */
