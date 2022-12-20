@@ -359,16 +359,24 @@ header .container {
   padding-top: 94px;
 }
 
-.features__item {
-  width: 450px;
+@media (max-width: 768px) {
+  .features__list > li:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
-
+@media screen and (min-width: 1024px) {
+  .features__list {
+    display: flex;
+  }
+  .features__list > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .features__bg {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;
-  width: 450px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -383,6 +391,11 @@ header .container {
   color: #212121;
 }
 
+@media (max-width: 768px) {
+  .features__title {
+    text-align: center;
+  }
+}
 .features__text {
   font-weight: 400;
   font-size: 14px;
