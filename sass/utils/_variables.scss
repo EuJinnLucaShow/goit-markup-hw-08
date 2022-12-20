@@ -44,6 +44,12 @@ section {
     padding-bottom: 94px;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 footer {
     background: #2f303a;
     color: $primary-white-color;

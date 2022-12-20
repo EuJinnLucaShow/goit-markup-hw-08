@@ -13,12 +13,36 @@
     padding-top: 94px;
 }
 
-.team__list {
-    display: flex;
+@media (max-width: 768px) {
 
-    &>li:not(:last-child) {
-            margin-right: 30px;
+    .team__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $primary-text-color;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .team__list>li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {    
+
+    .team__list {
+        display: flex;
+
+            &>li:not(:last-child) {
+                margin-right: 30px;
         }
+}
 }
 
 .team__item {
