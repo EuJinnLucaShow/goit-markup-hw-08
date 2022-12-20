@@ -354,6 +354,14 @@ header .container {
   margin: -1px;
 }
 
+@media screen and (max-width: 480px) {
+  .features__item {
+    width: 450px;
+  }
+  .features__bg {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .features__list {
     display: flex;
@@ -362,8 +370,19 @@ header .container {
     margin-right: 30px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .features__item {
+    width: 270px;
+  }
+  .features__bg {
+    width: 270px;
+  }
+}
 .features__item {
-  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .features__bg {

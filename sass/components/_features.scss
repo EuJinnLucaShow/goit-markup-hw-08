@@ -1,16 +1,21 @@
-@media screen and (min-width: 1024px) {
+.features {
+    padding-top: 94px;
+}
 
-    .features__list {
-        display: flex;
+@media screen and (min-width: 768px){   
 
-        &>li:not(:last-child) {
+.features__list {
+    display: flex;
+}
+
+    &>li:not(:last-child) {
             margin-right: 30px;
         }
-    }
 }
 
 .features__item {
-    width: 270px;    
+    width: 270px;
+    
 }
 
 .features__bg {
@@ -18,7 +23,8 @@
     justify-content: center;
     align-items: center;
     height: 120px;
-    // width: 270px;    
+    // width: 270px;
+    width: 100%;
     background-color: #f5f4fa;
     margin-bottom: 30px;
     border-radius: 4px;
