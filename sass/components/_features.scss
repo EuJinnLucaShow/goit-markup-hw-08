@@ -1,20 +1,16 @@
-.features {
-    padding-top: 94px;
+@media screen and (min-width: 1024px) {
+
+    .features__list {
+        display: flex;
+
+        &>li:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 }
 
-// @media screen and (min-width: 1024px) {
-
-//     .features__list {
-//         display: flex;
-
-//         &>li:not(:last-child) {
-//             margin-right: 30px;
-//         }
-//     }
-// }
-
 .features__item {
-    width: 450px;    
+    width: 270px;    
 }
 
 .features__bg {
