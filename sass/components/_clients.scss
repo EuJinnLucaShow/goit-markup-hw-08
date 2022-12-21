@@ -13,17 +13,17 @@
     .clients__list {
         display: inline-flex;
         flex-wrap: wrap;
-        justify-content: space-between;        
+        justify-content: space-between;
     }
 }
 
 @media screen and (min-width: 1024px) {
 
-.clients__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .clients__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .clients__item {
@@ -31,23 +31,23 @@
     border-radius: 4px;
 
     &:hover,
-        &:focus {
-            border-color: $second-blue-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    &:focus {
+        border-color: $second-blue-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 @media screen and (max-width: 480px) {
-    
+
     .clients__item {
         width: calc((100% - 30px) / 2);
         // width: 210px;
         height: 92px;
 
-            // &:nth-child(2n+1) {
-            //     margin-right: 30px;
-            //     }
+        // &:nth-child(2n+1) {
+        //     margin-right: 30px;
+        //     }
     }
 }
 
@@ -79,11 +79,11 @@
     align-items: center;
 
     &:hover .clients__icon,
-        &:focus .clients__icon {
-            fill: $second-blue-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    &:focus .clients__icon {
+        fill: $second-blue-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .clients__icon {
