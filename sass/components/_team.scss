@@ -34,6 +34,13 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    .clients__list>li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .team__item {
             width: calc((100% - 60px) / 2);

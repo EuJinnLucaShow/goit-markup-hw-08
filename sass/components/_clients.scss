@@ -9,6 +9,13 @@
     padding-top: 94px;
 }
 
+@media screen and (max-width: 768px) {
+    .clients__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (min-width: 1024px) {
 
 .clients__list {
