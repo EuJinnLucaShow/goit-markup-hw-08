@@ -24,13 +24,6 @@
         height: 120px;
     }
 }
-// @media screen and (min-width: 768px) {
-
-//     .features__item {
-//         display: block;
-//         width: 354px;
-//     }
-// }
 
 @media screen and (min-width: 1024px){
 
@@ -54,8 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
-    // width: 270px;    
+    height: 120px;       
     background-color: #f5f4fa;
     margin-bottom: 30px;
     border-radius: 4px;
