@@ -11,8 +11,9 @@
 
 @media screen and (max-width: 768px) {
     .clients__list {
-        display: flex;
-        flex-wrap: wrap;                         
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;        
     }
 }
 
@@ -40,12 +41,13 @@
 @media screen and (max-width: 480px) {
     
     .clients__item {
-        width: calc((100% - 60px) / 2);
+        width: calc((100% - 30px) / 2);
+        // width: 210px;
         height: 92px;
 
-            &:nth-child(2n+1) {
-                margin-right: 30px;
-                }
+            // &:nth-child(2n+1) {
+            //     margin-right: 30px;
+            //     }
     }
 }
 
