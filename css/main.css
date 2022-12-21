@@ -601,15 +601,6 @@ header .container {
     align-items: center;
   }
 }
-@media screen and (min-width: 1024px) {
-  .clients__item {
-    width: 170px;
-    height: 92px;
-  }
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
 .clients__item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -622,8 +613,20 @@ header .container {
 
 @media screen and (max-width: 480px) {
   .clients__item {
-    width: 210px;
+    width: calc((100% - 60px) / 2);
     height: 92px;
+  }
+  .clients__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .clients__item {
+    width: 170px;
+    height: 92px;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 .clients__link {
