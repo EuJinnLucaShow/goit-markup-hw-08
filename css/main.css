@@ -359,7 +359,7 @@ header .container {
   padding-top: 94px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .features__list > li:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -370,6 +370,11 @@ header .container {
   }
   .features__list > li:not(:last-child) {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .features__item {
+    width: 270px;
   }
 }
 .features__bg {
@@ -466,7 +471,7 @@ header .container {
   padding-top: 94px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .team__title {
     font-weight: 700;
     font-size: 28px;
@@ -478,7 +483,7 @@ header .container {
     padding-bottom: 30px;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .team__list > li:not(:last-child) {
     margin-bottom: 30px;
   }
