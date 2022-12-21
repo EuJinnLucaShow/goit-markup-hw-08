@@ -460,6 +460,11 @@ header .container {
   background: #f5f4fa;
 }
 
+@media screen and (max-width: 1024px) {
+  .team {
+    padding-bottom: 60px;
+  }
+}
 .team__title {
   font-weight: 700;
   font-size: 36px;
@@ -483,13 +488,8 @@ header .container {
     padding-bottom: 30px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .team__list > li:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .clients__list > li:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -577,6 +577,11 @@ header .container {
   fill: #afb1b8;
 }
 
+@media screen and (max-width: 1024px) {
+  .clients {
+    padding-bottom: 30px;
+  }
+}
 .clients__title {
   font-weight: 700;
   font-size: 36px;
@@ -584,13 +589,28 @@ header .container {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-bottom: 50px;
-  padding-top: 94px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  .clients__title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .clients__title {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .clients__list > li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1023px) {
   .clients__list {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -612,9 +632,15 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients__item {
     width: calc((100% - 30px) / 2);
+    height: 92px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 210px;
     height: 92px;
   }
 }
