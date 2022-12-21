@@ -34,11 +34,11 @@
     }
 }
 
-    //     @media screen and (min-width: 768px) {
-    // .team__item {
-    //         width: calc((100% - 60px) / 2);
-    //     }
-    //             }
+@media screen and (min-width: 768px) {
+    .team__item {
+            width: calc((100% - 60px) / 2);
+        }
+                }
 
 @media screen and (min-width: 1024px) {    
 
