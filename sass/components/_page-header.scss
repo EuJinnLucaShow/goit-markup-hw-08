@@ -112,8 +112,7 @@ header .container {
 }
 
 .page-header__contact {
-    display: flex;
-    flex-wrap:wrap;
+    display: inline;    
     // align-items: center;
     // justify-content: center;
     font-family: $primary-font;

@@ -24,11 +24,11 @@
     }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .features__item {
         width: calc((100% - 30px) / 2);
-        height: 120px;
+        // height: 120px;
     }
 }
 
@@ -69,7 +69,7 @@
     color: $primary-text-color;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
 .features__title {
     text-align: center;
 }
