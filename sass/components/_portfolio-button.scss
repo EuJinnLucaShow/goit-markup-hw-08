@@ -3,10 +3,19 @@
     justify-content: center;
     padding-top: 94px;
     padding-bottom: 50px;
+
+    &>li:not(:last-child) {
+            margin-right: 8px;
+        }
 }
 
-.filters>li:not(:last-child) {
-    margin-right: 8px;
+@media screen and (max-width: 480px) {
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        row-gap: 15px;
+    }
 }
 
 .filters__btn {
