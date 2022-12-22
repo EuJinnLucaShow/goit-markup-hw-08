@@ -1,5 +1,5 @@
 .page-footer__contacts {
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
 }
@@ -49,18 +49,13 @@
 //     margin-bottom: 100px;
 // }
 
-// .page-footer__social {
-//     display: flex;
-//     flex-wrap:wrap;
-//     justify-content: center;
-//     align-items: center;
-// }
+.page-footer__social {
+    display: inline-block;    
+    justify-content: center;
+    align-items: center;
+}
 
 .page-footer__title {
-    display: flex;
-
-        justify-content: center;
-            align-items: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -112,14 +107,15 @@
 //     padding-left: 93px;
 // }
 
-// .feed_back{
-//     display: flex;
-//         align-items: center;
-//             text-align: center;
-// }
+.page-footer__mailing {
+    display: inline-block;
+    justify-content: end;
+        align-items: center;    
+}
 
 .page-footer__mailing-form {
     display: flex;
+    flex-wrap:wrap;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -139,10 +135,7 @@
     font-size: 16px;
 }
 
-.page-footer__mailing-title {
-    display: flex;
-        justify-content: center;
-            align-items: center;
+.page-footer__mailing-title { 
     padding-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
