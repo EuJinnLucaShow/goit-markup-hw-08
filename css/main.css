@@ -776,12 +776,14 @@ header .container {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .filters {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     row-gap: 15px;
+    padding-top: 60px;
+    padding-bottom: 40px;
   }
 }
 .filters__btn {
@@ -813,7 +815,7 @@ header .container {
   row-gap: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .grid {
     display: flex;
     flex-wrap: wrap;
@@ -825,9 +827,14 @@ header .container {
   width: calc((100% - 60px) / 3);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .grid__item {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid__item {
+    width: calc((100% - 30px) / 2);
   }
 }
 .grid__item {

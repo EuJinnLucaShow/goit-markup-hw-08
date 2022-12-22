@@ -9,12 +9,14 @@
         }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
     .filters {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         row-gap: 15px;
+        padding-top: 60px;
+        padding-bottom: 40px;
     }
 }
 
