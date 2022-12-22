@@ -813,10 +813,23 @@ header .container {
   row-gap: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+  }
+}
 .grid__item {
   width: calc((100% - 60px) / 3);
 }
 
+@media screen and (max-width: 480px) {
+  .grid__item {
+    width: 100%;
+  }
+}
 .grid__item {
   display: block;
 }
