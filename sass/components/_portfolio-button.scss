@@ -9,7 +9,7 @@
         }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 767px) {
     .filters {
         display: flex;
         flex-wrap: wrap;
@@ -17,6 +17,17 @@
         row-gap: 15px;
         padding-top: 60px;
         padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 15px;
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 }
 

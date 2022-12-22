@@ -776,7 +776,7 @@ header .container {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 767px) {
   .filters {
     display: flex;
     flex-wrap: wrap;
@@ -784,6 +784,16 @@ header .container {
     row-gap: 15px;
     padding-top: 60px;
     padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 }
 .filters__btn {
@@ -807,6 +817,11 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding-bottom: 60px;
+  }
+}
 .grid {
   display: flex;
   flex-wrap: wrap;
