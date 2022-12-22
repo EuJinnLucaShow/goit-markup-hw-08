@@ -2,6 +2,13 @@
     padding-top: 94px;
 }
 
+@media screen and (max-width: 1024px) {
+    .features {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
 @media screen and (max-width: 1023px) {
 
     .features__list>li:not(:last-child) {

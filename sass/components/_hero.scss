@@ -11,6 +11,19 @@
     background-size: cover;
 }
 
+@media screen and (max-width: 480px) {
+    .hero {        
+        padding-top: 118px;
+        height: 400px;
+        text-align: center;
+        background: #2f303a;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/header_mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 .hero__title {
     font-weight: 900;
     font-size: 44px;
@@ -22,6 +35,13 @@
     text-transform: uppercase;
     max-width: 696px;
     color: $primary-white-color;
+}
+
+@media screen and (max-width: 1023px) {
+    .hero__title {
+        font-size: 26px;
+        line-height: 1.61;
+    }
 }
 
 .button {    
