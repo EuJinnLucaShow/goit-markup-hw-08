@@ -27,17 +27,17 @@
     }
 }
 
-@media screen and (max-width: 1023px) {
-    .clients__list>li:not(:last-child) {
-    margin-bottom: 30px;
-    }
-}
+// @media screen and (max-width: 1023px) {
+//     .clients__list>li:not(:last-child) {
+//     margin-bottom: 30px;
+//     }
+// }
 
 @media screen and (max-width: 1023px) {
     .clients__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;        
+        gap: 30px;
     }
 }
 
@@ -79,7 +79,7 @@
 
     .clients__item {
         // width: calc((100% - 30px) / 3);
-        width: 210px;
+        width: 226px;
         height: 92px;
 
         // &:nth-child(2n+1) {

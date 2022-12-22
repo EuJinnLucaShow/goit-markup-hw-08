@@ -49,8 +49,6 @@ footer {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: auto;
 }
 @media screen and (min-width: 480px) {
@@ -73,32 +71,29 @@ header .container {
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
   header .container {
     height: 60px;
+    justify-content: space-between;
   }
 }
 .page-header--line {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .page-header__list > li:not(:last-child) {
+    padding-right: 50px;
+  }
 }
-
-.page-header__list > li:not(:last-child) {
-  margin-right: 50px;
-}
-
 /* Logo */
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   color: #2196f3;
 }
 
@@ -173,12 +168,8 @@ header .container {
   transform: scaleX(1);
 }
 
-.page-header__contacts {
-  margin-left: auto;
-}
-
 .page-header__contact {
-  display: inline;
+  display: flex;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -193,6 +184,18 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .page-header__contact {
+    padding-left: 90px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+  .page-header__contact > .page-header__item:first-child {
+    padding-bottom: 10px;
+  }
+}
 .page-header__contact:hover .page-header__icon,
 .page-header__contact:focus .page-header__icon {
   fill: #2196f3;
@@ -699,15 +702,10 @@ header .container {
   }
 }
 @media screen and (max-width: 1023px) {
-  .clients__list > li:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 1023px) {
   .clients__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -735,7 +733,7 @@ header .container {
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: 210px;
+    width: 226px;
     height: 92px;
   }
 }
