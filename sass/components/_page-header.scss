@@ -1,7 +1,6 @@
 header .container {    
     display: flex;
-    align-items: center;
-    justify-content: center;    
+    align-items: center;      
     }
 
 @media screen and (max-width: 767px) {
@@ -26,11 +25,6 @@ header .container {
 }
 }
 
-// @media screen and (min-width: 768px) {
-//     .page-header__list {
-//         margin-right: 90px;
-//     }
-// }
 /* Logo */
 
 .logo {
@@ -46,7 +40,7 @@ header .container {
     padding-bottom: 25px;
 
     @media screen and (min-width: 768px) {
-            margin-right: 87px;
+            margin-right: 80px;
         }
 
     @media screen and (min-width: 1200px) {        
@@ -118,9 +112,31 @@ header .container {
     justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+    .page-header__contacts {
+        margin-left: 300px;
+    }
+}
+
+@media screen and (width: 768px) {
+
+    .page-header__contacts {
+        flex-direction: column;
+        margin-left: 90px;
+        row-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .page-header__contacts>li:first-child {
+        padding-right: 30px;
+    }
+}
+
 .page-header__contact {
-    // display: flex;    
-    // align-items: center;
+    display: flex;    
+    align-items: center;
     // justify-content: center;
     font-family: $primary-font;
     font-weight: 500;
