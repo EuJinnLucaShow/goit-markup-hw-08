@@ -72,6 +72,7 @@ footer {
 header .container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -169,8 +170,12 @@ header .container {
   transform: scaleX(1);
 }
 
-.page-header__contact {
+.page-header__contacts {
   display: flex;
+  justify-content: center;
+}
+
+.page-header__contact {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
@@ -187,7 +192,6 @@ header .container {
 
 @media screen and (min-width: 768px) {
   .page-header__contact {
-    padding-left: 90px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.16;
@@ -196,13 +200,16 @@ header .container {
 }
 @media screen and (min-width: 1140px) {
   .page-header__contact {
-    padding-left: 315px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
   }
 }
+.page-header__item {
+  display: flex;
+}
+
 .page-header__contact:hover .page-header__icon,
 .page-header__contact:focus .page-header__icon {
   fill: #2196f3;
@@ -1065,6 +1072,12 @@ header .container {
   font-size: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  #footer_email {
+    width: 420px;
+    margin-right: 0;
+  }
+}
 .page-footer__mailing {
   margin-bottom: 60px;
 }
