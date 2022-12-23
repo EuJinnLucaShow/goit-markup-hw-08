@@ -1092,7 +1092,6 @@ header .container {
 
 @media screen and (max-width: 768px) {
   #footer_email {
-    width: 420px;
     margin-right: 0;
   }
 }
