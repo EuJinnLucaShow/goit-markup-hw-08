@@ -36,6 +36,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 768px) {
+    .modal {
+    width: 450px;
+    }        
+}
+
 .modal__title {
     font-weight: 700;
     font-size: 20px;
@@ -120,8 +126,12 @@
     color: #757575;
 }
 
-.modal__btn {
-    margin-left: 124px;
+.modal-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.modal__btn {    
     margin-top: 30px;
     width: 200px;
     height: 50px;
@@ -218,6 +228,15 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+}
+
+@media screen and (max-width: 768px){
+    .checkbox__text{
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;    
+        letter-spacing: 0.03em;
+    }
 }
 
 .checkbox__link {

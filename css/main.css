@@ -1007,8 +1007,6 @@ header .container {
 }
 
 .page-footer__mailing-form {
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -1097,6 +1095,11 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
 .modal__title {
   font-weight: 700;
   font-size: 20px;
@@ -1175,8 +1178,12 @@ header .container {
   color: #757575;
 }
 
+.modal-submit {
+  display: flex;
+  justify-content: center;
+}
+
 .modal__btn {
-  margin-left: 124px;
   margin-top: 30px;
   width: 200px;
   height: 50px;
@@ -1273,6 +1280,14 @@ header .container {
   color: #757575;
 }
 
+@media screen and (max-width: 768px) {
+  .checkbox__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
 .checkbox__link {
   margin-left: 4px;
   -webkit-text-decoration-line: underline;
