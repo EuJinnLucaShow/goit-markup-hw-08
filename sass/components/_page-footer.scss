@@ -1,22 +1,17 @@
 .page-footer__contacts {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
 }
 
-// @media screen and (max-width: 1023px) {
-// .page-footer__contacts {
-//         display: flex;
-//         flex-wrap:wrap;
-//     }
-// }
+.page-footer__logo {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
 
-// .page-footer__logo {    
-//     padding-top: 60px;
-//     padding-bottom: 20px;
-// }
-
-.page-footer__address {    
+.page-footer__address {
+    display: block;
     padding-bottom: 9px;
     font-weight: 400;
     font-size: 14px;
@@ -25,7 +20,8 @@
     color: $primary-white-color;
 }
 
-.page-footer__tel {    
+.page-footer__tel {
+    display: block;
     padding-bottom: 60px;
     font-weight: 400;
     font-size: 14px;
@@ -34,7 +30,8 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.page-footer__mail {   
+.page-footer__mail {
+    display: block;
     padding-bottom: 9px;
     font-weight: 400;
     font-size: 14px;
@@ -43,16 +40,19 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-// .page-footer__social {
-//     margin-top: 72px;
-//     margin-left: 70px;
-//     margin-bottom: 100px;
-// }
-
 .page-footer__social {
-    display: inline-block;    
-    justify-content: center;
-    align-items: center;
+    margin-top: 72px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+    .page-footer__social {
+        margin-top: 60px;
+        margin-left: 137px;
+        margin-right: 137px;
+        margin-bottom: 60px;
+    }
 }
 
 .page-footer__title {
@@ -64,10 +64,21 @@
     color: $primary-white-color;
 }
 
-// .page-footer__title {
-//     display: flex;
-//     margin-bottom: 20px;
-// }
+@media screen and (max-width: 1024px) {
+    .page-footer__title {
+        /* display: flex; */
+        margin-bottom: 20px;
+        /* justify-content: space-around; */
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+.page-footer__title {
+    display: flex;
+    margin-bottom: 20px;
+}
+}
 
 .page-footer__soclist {
     display: flex;
@@ -95,33 +106,28 @@
     align-items: center;
 
     &:hover,
-        &:focus {
-            background-color: $second-blue-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    &:focus {
+        background-color: $second-blue-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
-// .page-footer__mailing {
-//     padding-top: 72px;
-//     padding-left: 93px;
-// }
-
-.page-footer__mailing {
-    display: inline-block;
-    justify-content: end;
-        align-items: center;    
-}
 
 .page-footer__mailing-form {
-    // display: flex;    
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
 }
 
+@media screen and (min-width: 1024px) {
+    .page-footer__mailing-form {
+    display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 #footer_email {
-    // width: 358px;
+    width: 358px;
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -134,7 +140,27 @@
     font-size: 16px;
 }
 
-.page-footer__mailing-title { 
+.page-footer__mailing {
+    margin-bottom: 60px;
+}
+
+// @media screen and (max-width: 1024px) {
+//     .page-footer__mailing {
+//         display: flex;
+//         justify-content: center;
+//     }
+// }
+
+@media screen and (min-width: 1024px) {
+    .page-footer__mailing {
+        padding-top: 72px;
+        padding-left: 93px;
+    }
+}
+
+
+
+.page-footer__mailing-title {
     padding-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -144,16 +170,21 @@
     color: $primary-white-color;
 }
 
+@media screen and (max-width: 1024px) {
+    .page-footer__mailing-title {
+        text-align: center;
+    }
+}
+
 .page-footer__mailing-btn {
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    
+    padding-left: 28px;
     width: 200px;
     height: 50px;
     border: none;
@@ -162,6 +193,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .page-footer__mailing-btn {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
 }
 
 .page-footer__mailing-icon {
