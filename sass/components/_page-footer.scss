@@ -4,6 +4,12 @@
     justify-content: center; 
 }
 
+@media screen and (max-width: 768px) {
+.footer-cont {
+    text-align: center;
+}
+}
+
 .page-footer__logo {
     display: block;
     padding-top: 60px;
@@ -22,12 +28,18 @@
 
 .page-footer__tel {
     display: block;
-    padding-bottom: 60px;
+    
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+    .page-footer__tel {
+        padding-bottom: 60px;
+    }
 }
 
 .page-footer__mail {
