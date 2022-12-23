@@ -152,6 +152,13 @@
     font-size: 16px;
 }
 
+@media screen and (max-width: 768px) {
+    #footer_email {
+        width: 450px;
+        margin-right: 0;
+    }
+}
+
 .page-footer__mailing {
     margin-bottom: 60px;
 }
