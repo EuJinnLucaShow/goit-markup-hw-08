@@ -112,13 +112,13 @@ header .container {
     justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
     .page-header__contacts {
         margin-left: 300px;
     }
 }
 
-@media screen and (width: 768px) {
+@media screen and (max-width: 1439px) {
 
     .page-header__contacts {
         flex-direction: column;
