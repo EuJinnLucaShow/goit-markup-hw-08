@@ -70,7 +70,6 @@ footer {
 }
 
 header .container {
-  height: 80px;
   display: flex;
   align-items: center;
 }
@@ -194,8 +193,14 @@ header .container {
     line-height: 1.16;
     letter-spacing: 0.02em;
   }
-  .page-header__contact > .page-header__item:first-child {
-    padding-bottom: 10px;
+}
+@media screen and (min-width: 1140px) {
+  .page-header__contact {
+    padding-left: 315px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 .page-header__contact:hover .page-header__icon,
