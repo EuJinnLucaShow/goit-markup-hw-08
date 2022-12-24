@@ -393,22 +393,13 @@ header .container {
   background-size: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .hero {
     padding-top: 118px;
     height: 400px;
     text-align: center;
     background: #2f303a;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_mobile_1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 800px) {
-  .hero {
-    background: #2f303a;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_tablet_1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
