@@ -137,8 +137,7 @@
     }
 }
 
-#footer_email {
-    width: 358px;
+#footer_email {    
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -162,6 +161,12 @@
     #footer_email {
         width: 450px;
         margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #footer_email {
+        width: 358px;        
     }
 }
 
