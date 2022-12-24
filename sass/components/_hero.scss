@@ -4,25 +4,27 @@
     padding-bottom: 200px;
     text-align: center;
     background: #2f303a;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/headerimg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
-@media screen and (max-width: 480px) {
-    .hero {        
-        padding-top: 118px;
-        height: 400px;
-        text-align: center;
-        background: #2f303a;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/header_mobile_1x.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-}
+        @media screen and (min-width: 320px) {
+            .hero {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url(../images/header_mobile_1x.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+    
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                        url(../images/header_mobile_2x.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }
 
     @media screen and (min-width: 768px) {
     .hero {
