@@ -142,7 +142,15 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img src="./images/product_designer.jpg" alt="Product Designer" width="270" height="260" />
+            <picture>
+              <source srcset="./images/team_card_1_desktop_1x.jpg 1x, ./images/team_card_1_desktop_2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/team_card_1_tablet_1x.jpg 1x, ./images/team_card_1_tablet_2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/team_card_1_mobile_1x.jpg 1x, ./images/team_card_1_mobile_2x.jpg 2x"
+                media="(min-width: 480px)" />
+              <img src="./images/product_designer.jpg" alt="Product Designer" width="270" height="260" />
+            </picture>
             <h3 class="team__subtitle">Ігор Дем'яненко</h3>
             <p class="team__text">Product Designer</p>
             <ul class="team__soclinks">
@@ -171,7 +179,15 @@
             </ul>
           </li>
           <li class="team__item">
-            <img src="./images/frontend_developer.jpg" alt="Frontend Developer" width="270" height="260" />
+            <picture>
+              <source srcset="./images/team_card_2_desktop_1x.jpg 1x, ./images/team_card_2_desktop_2x.jpg 2x"
+                media="(min-width: 1200px) 1200px" />
+              <source srcset="./images/team_card_2_tablet_1x.jpg 1x, ./images/team_card_2_tablet_2x.jpg 2x"
+                media="(min-width: 768px) 768px" />
+              <source srcset="./images/team_card_2_mobile_1x.jpg 1x, ./images/team_card_2_mobile_2x.jpg 2x"
+                media="(min-width: 480px) 480px" />
+              <img src="./images/frontend_developer.jpg" alt="Frontend Developer" width="270" height="260" />
+            </picture>
             <h3 class="team__subtitle">Ольга Рєпіна</h3>
             <p class="team__text">Frontend Developer</p>
             <ul class="team__soclinks">
