@@ -36,10 +36,16 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
     .modal {
     width: 450px;
     }        
+}
+
+@media screen and (max-width: 479px) {
+    .modal {
+        width: auto;
+    }
 }
 
 .modal__title {
