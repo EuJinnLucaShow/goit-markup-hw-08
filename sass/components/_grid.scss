@@ -123,3 +123,20 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.gallery__description {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #fff;
+
+    @media screen and (max-width: 480px) {
+        padding: calc(5px + 5vw) 24px;
+        font-size: calc(9px + 2vw);
+    }
+
+    @media screen and (min-width: 480px) {
+        padding: 77px 24px;
+        font-size: 18px;
+    }
+}
