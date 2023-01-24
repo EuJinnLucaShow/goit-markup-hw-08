@@ -8,13 +8,14 @@
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
+    justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
     .grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: center;
         row-gap: 15px;        
     }
 }
@@ -104,4 +105,21 @@
     transform: translateY(0);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery__item--hidden {
+    transform: scale(0.3);
+    position: absolute;
+
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+
+    border: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

@@ -51,16 +51,16 @@
     <section class="gallery">
       <div class="container">
         <ul class="filters">
-          <li><button type="button" class="filters__btn">Усі</button></li>
-          <li><button type="button" class="filters__btn">Веб-сайти</button></li>
-          <li><button type="button" class="filters__btn">Додатки</button></li>
-          <li><button type="button" class="filters__btn">Дизайн</button></li>
-          <li><button type="button" class="filters__btn">Маркетинг</button></li>
+          <li><button type="button" class="filters__btn filter__btn--active" data-value="all">Усі</button></li>
+          <li><button type="button" class="filters__btn" data-value="web">Веб-сайти</button></li>
+          <li><button type="button" class="filters__btn" data-value="applications">Додатки</button></li>
+          <li><button type="button" class="filters__btn" data-value="design">Дизайн</button></li>
+          <li><button type="button" class="filters__btn" data-value="marketing">Маркетинг</button></li>
         </ul>
 
         <h1 class="visually-hidden">Наше портфоліо</h1>
         <ul class="grid">
-          <li class="grid__item">
+          <li class="grid__item" data-tag="web">
             <a href="#" class="grid__box-link">
               <div class="grid__box">
                 <div class="grid__overlay"></div>
@@ -80,7 +80,7 @@
               </div>
             </a>
           </li>
-          <li class="grid__item">
+          <li class="grid__item" data-tag="design">
             <a href="#" class="grid__box-link">
               <div class="grid__box">
                 <div class="grid__overlay"></div>
@@ -100,7 +100,7 @@
               </div>
             </a>
           </li>
-          <li class="grid__item">
+          <li class="grid__item" data-tag="applications">
             <a href="#" class="grid__box-link">
               <div class="grid__box">
                 <div class="grid__overlay"></div>
@@ -120,7 +120,7 @@
               </div>
             </a>
           </li>
-          <li class="grid__item">
+          <li class="grid__item" data-tag="marketing">
             <a href="#" class="grid__box-link">
               <div class="grid__box">
                 <div class="grid__overlay"></div>
@@ -140,7 +140,7 @@
               </div>
             </a>
           </li>
-          <li class="grid__item">
+          <li class="grid__item" data-tag="applications">
             <a href="#" class="grid__box-link">
               <div class="grid__box">
                 <div class="grid__overlay"></div>
@@ -160,7 +160,7 @@
               </div>
             </a>
           </li>
-          <li class="grid__item">
+          <li class="grid__item" data-tag="web">
             <a href="#" class="grid__box-link">
               <div class="grid__box">
                 <div class="grid__overlay"></div>
@@ -180,7 +180,7 @@
               </div>
             </a>
           </li>
-          <li class="grid__item">
+          <li class="grid__item" data-tag="design">
             <a href="#" class="grid__box-link">
               <div class="grid__box">
                 <div class="grid__overlay"></div>
@@ -200,7 +200,7 @@
               </div>
             </a>
           </li>
-          <li class="grid__item">
+          <li class="grid__item" data-tag="marketing">
             <a href="#" class="grid__box-link">
               <div class="grid__box">
                 <div class="grid__overlay"></div>
@@ -220,7 +220,7 @@
               </div>
             </a>
           </li>
-          <li class="grid__item">
+          <li class="grid__item" data-tag="applications">
             <a href="#" class="grid__box-link">
               <div class="grid__box">
                 <div class="grid__overlay"></div>
@@ -340,6 +340,7 @@
     crossorigin="anonymous"></script>
   <script defer src="./js/mobile-menu.js"></script>
 
+  <script src="./js/filter.js"></script>
 </body>
 
 </html>

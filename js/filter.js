@@ -1,6 +1,6 @@
 const refs = {
-  filterButtonsList: document.querySelector('.filter'),
-  galleryItems: document.querySelectorAll('.gallery__item'),
+  filterButtonsList: document.querySelector('.filters'),
+  galleryItems: document.querySelectorAll('.grid__item'),
 };
 
 let selectedFilter = null;
