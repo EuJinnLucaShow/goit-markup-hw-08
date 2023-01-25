@@ -107,7 +107,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery__item--hidden {
+.grid__item--hidden {
     transform: scale(0.3);
     position: absolute;
 
@@ -124,7 +124,7 @@
     overflow: hidden;
 }
 
-.gallery__description {
+.grid__description {
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;

@@ -24,18 +24,18 @@ function onFilterClick(event) {
 function selectedGalleryItems(selectedFilter) {
   if (selectedFilter === 'all') {
     refs.galleryItems.forEach(item => {
-      item.classList.remove('gallery__item--hidden');
+      item.classList.remove('grid__item--hidden');
     });
     return;
   }
 
   refs.galleryItems.forEach(item => {
     if (item.dataset.tag !== selectedFilter) {
-      item.classList.add('gallery__item--hidden');
+      item.classList.add('grid__item--hidden');
 
       return;
     }
-    item.classList.remove('gallery__item--hidden');
+    item.classList.remove('grid__item--hidden');
   });
 }
 
