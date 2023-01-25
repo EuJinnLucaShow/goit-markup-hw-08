@@ -13,9 +13,6 @@
 
 @media screen and (max-width: 767px) {
     .grid {
-        // display: flex;
-        // flex-wrap: wrap;
-        // justify-content: center;
         row-gap: 15px;        
     }
 }
@@ -130,7 +127,7 @@
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
-    color: #fff;
+    color: $primary-white-color;
 
     @media screen and (max-width: 480px) {
         padding: calc(5px + 5vw) 24px;
