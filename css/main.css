@@ -779,16 +779,6 @@ header .container {
     align-items: center;
   }
 }
-.clients__item {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-.clients__item:hover, .clients__item:focus {
-  border-color: #2196f3;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 @media screen and (max-width: 767px) {
   .clients__item {
     width: calc((100% - 30px) / 2);
@@ -818,9 +808,18 @@ header .container {
   color: #afb1b8;
   justify-content: center;
   align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 .clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
   fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border-color: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
