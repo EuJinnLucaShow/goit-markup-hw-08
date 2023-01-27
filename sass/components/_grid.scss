@@ -18,10 +18,9 @@
 }
 
 .grid__item {
-    display: block;
-    min-height: 400px;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;    
+    // transition: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
         &:focus {
